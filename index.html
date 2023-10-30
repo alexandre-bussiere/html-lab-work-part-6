@@ -17,7 +17,7 @@
         </nav>
     </header>
     <main>
-        <form id="main-form" name="mainform">
+        <form id="index-form" name="indexform">
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="firstName" required><br><br>
 
@@ -43,12 +43,18 @@
             <label for="standardMembership">Standard Membership</label><br>
             <input type="radio" id="basicMembership" name="membership" value="Basic Membership">
             <label for="basicMembership">Basic Membership</label><br><br>
-            <button type="button" id="userForm">Submit</button>
+            <button id="userForm">Submit</button>
             <button type="reset">Cancel</button>
         </form>
         <div id="output">
             <p id="userInformation"></p>
         </div>
+
+        <button id="dark-mode-toggle" onclick="toggleDarkMode(true)">Dark Mode</button>
+        <br>
+        <br>
+        <button id="light-mode-toggle" onclick="toggleDarkMode(false)">Light Mode</button>
+        <br><br><br><br><br><br><br>
     </main>
     <footer>
         <p>

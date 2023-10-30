@@ -17,25 +17,33 @@
         </nav>
     </header>
     <main>
-        <form id="main-form" name="mainform">
+        <form id="excel-form" name="excelform">
 
             <label>Enter Number separated by space:</label>
             <input type="text" id="num-input" value=""><br>
-            <input type="radio" id="autoSum" name="methode-to-calc" value="" checked>
+            <input type="radio" id="autoSum" name="methode_to_calc" value="autoSum" checked>
             <label for="autoSum">AutoSum </label><br>
-            <input type="radio" id="average" name="methode-to-calc" value="">
+            <input type="radio" id="average" name="methode_to_calc" value="average">
             <label for="average">Average</label><br>
-            <input type="radio" id="max" name="methode-to-calc" value="">
+            <input type="radio" id="max" name="methode_to_calc" value="max">
             <label for="max">Max</label><br>
-            <input type="radio" id="min" name="methode-to-calc" value="">
+            <input type="radio" id="min" name="methode_to_calc" value="min">
             <label for="min">Min</label><br><br>
 
             <button id="calculate">Calculate</button>
         </form>
         <div id="output">
-            <p>Result: </p>
+            <p id="resulttitle">Result</p>
             <p id="result"> </p>
         </div>
+
+
+        <button id="dark-mode-toggle" onclick="toggleDarkMode(true)">Dark Mode</button>
+        <br>
+        <br>
+        <button id="light-mode-toggle" onclick="toggleDarkMode(false)">Light Mode</button>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </main>
     <footer>
         <p>
