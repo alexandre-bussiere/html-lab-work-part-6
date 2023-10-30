@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Excel</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="excel.html">Excel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="main-form" name="mainform">
+
+            <label>Enter Number separated by space:</label>
+            <input type="text" id="num-input" value=""><br>
+            <input type="radio" id="autoSum" name="methode-to-calc" value="" checked>
+            <label for="autoSum">AutoSum </label><br>
+            <input type="radio" id="average" name="methode-to-calc" value="">
+            <label for="average">Average</label><br>
+            <input type="radio" id="max" name="methode-to-calc" value="">
+            <label for="max">Max</label><br>
+            <input type="radio" id="min" name="methode-to-calc" value="">
+            <label for="min">Min</label><br><br>
+
+            <button id="calculate">Calculate</button>
+        </form>
+        <div id="output">
+            <p>Result: </p>
+            <p id="result"> </p>
+        </div>
+    </main>
+    <footer>
+        <p>
+            ILAC & EFREI - HTML, CSS, and JavaScript Assignment - Alexandre Bussiere
+        </p>
+    </footer>
+    <script type="text/javascript" src="javascript/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Your Custom Title</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="excel.html">Excel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="main-form" name="mainform">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br><br>
+
+            <label for="province">Province:</label>
+            <input type="text" id="province" name="province" required><br><br>
+
+            <label>Membership Type:</label><br>
+            <input type="radio" id="premiumMembership" name="membership" value="Premium Membership" checked>
+            <label for="premiumMembership">Premium Membership</label><br>
+            <input type="radio" id="standardMembership" name="membership" value="Standard Membership">
+            <label for="standardMembership">Standard Membership</label><br>
+            <input type="radio" id="basicMembership" name="membership" value="Basic Membership">
+            <label for="basicMembership">Basic Membership</label><br><br>
+            <button type="button" id="userForm">Submit</button>
+            <button type="reset">Cancel</button>
+        </form>
+        <div id="output">
+            <p id="userInformation"></p>
+        </div>
+    </main>
+    <footer>
+        <p>
+            ILAC & EFREI - HTML, CSS, and JavaScript Assignment - Alexandre Bussiere
+        </p>
+    </footer>
+    <script type="text/javascript" src="javascript/script.js"></script>
+</body>
+
+</html>
